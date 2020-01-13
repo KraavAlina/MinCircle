@@ -23,10 +23,12 @@ public class Main extends Application {
         Scene scene = new Scene(root, WIDTH, HEIGHT);
         Canvas canvas = new Canvas(WIDTH, HEIGHT);
         GraphicsContext gc = canvas.getGraphicsContext2D();
+
         RandomPoints randomPoints = new RandomPoints();
         randomPoints.drawPoints(gc);
         BuildMinCoverCircle method = new BuildMinCoverCircle(randomPoints.getPoints(),gc);
         method.drawCircle(gc);
+
         root.getChildren().add(canvas);
         primaryStage.setScene(scene);
         primaryStage.show();

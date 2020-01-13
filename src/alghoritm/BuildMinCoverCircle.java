@@ -69,14 +69,14 @@ public class BuildMinCoverCircle {
     }
 
     private void minDiskWithThreePoint(Point2D point1, Point2D point2, Point2D point3) {
-        /*if (Utils.onLine(point1, point2, point3)) {
+        if (Utils.onLine(point1, point2, point3)) {
             Point2D p1 = Utils.minPoint(Utils.minPoint(point1, point2), point3);
             Point2D p2 = Utils.maxPoint(Utils.maxPoint(point1, point2), point3);
             centerCircle = Utils.part(p1, p2);
             radius = Utils.distanceBetweenPoints(p1, p2) / 2;
             return;
         }
-        */
+
         /*
         Point2D mP1P2 = Utils.part(point1, point2);
         Point2D mP1P3 = Utils.part(point1, point3);
